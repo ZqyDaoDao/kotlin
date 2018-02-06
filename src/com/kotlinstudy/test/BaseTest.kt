@@ -21,6 +21,11 @@ fun printProduct(arg1: String,arg2: String){
     println(x * y)
 }
 
+
+val lazyValue: String by lazy {
+    println("computer！")
+    "hello"
+}
 fun main(args: Array<String>){
     println("hello, world")
 
@@ -49,4 +54,7 @@ fun main(args: Array<String>){
             .sortedBy { it }
             .map { it.toUpperCase() }
             .forEach { println(it) }
+
+    println(lazyValue)
+//    println(lazyValue)
 }
