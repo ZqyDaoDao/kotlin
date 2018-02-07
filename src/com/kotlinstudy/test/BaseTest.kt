@@ -23,8 +23,9 @@ fun printProduct(arg1: String,arg2: String){
 
 
 val lazyValue: String by lazy {
-    println("computer！")
     "hello"
+    println("computer！")
+    "123"
 }
 fun main(args: Array<String>){
     println("hello, world")
@@ -56,5 +57,5 @@ fun main(args: Array<String>){
             .forEach { println(it) }
 
     println(lazyValue)
-//    println(lazyValue)
+    println(lazyValue)
 }
